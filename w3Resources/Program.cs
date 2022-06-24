@@ -1,13 +1,15 @@
-﻿Console.WriteLine("Input: ");
-int value1 = int.Parse(Console.ReadLine());
-int value2 = int.Parse(Console.ReadLine());
+﻿Console.Write("Input: ");
+int n = int.Parse(Console.ReadLine());
+
 int result = 0;
-if(value1 != value2)
+
+if (n < 51)
 {
-    result = value1 + value2;   
+    n = 51 - n;
+    Console.WriteLine(n);
 }
 else
 {
-    result = 3 * (value1 + value2);
+    n = 3 * (51 - n);
+    Console.WriteLine(n);
 }
-Console.WriteLine(result);
