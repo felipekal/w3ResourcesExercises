@@ -1,17 +1,12 @@
-﻿Console.WriteLine("input");
-int n = int.Parse(Console.ReadLine());
-bool v = true;
+﻿string s = Console.ReadLine();
 
-if (n <= 100 && n % 10 == 0)
+string s2 = "if";
+
+if (s.StartsWith("if"))
 {
-    Console.WriteLine(v);
-}
-else if (n > 100 && n <= 200)
-{
-    Console.WriteLine(v);
+    Console.WriteLine(s);
 }
 else
 {
-    v = false;
-    Console.WriteLine(v);
+    Console.WriteLine(s2+ " " + s);
 }
