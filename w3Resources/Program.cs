@@ -1,15 +1,17 @@
-﻿Console.WriteLine("Input: ");
+﻿Console.WriteLine("input");
 int n = int.Parse(Console.ReadLine());
-int n2 = int.Parse(Console.ReadLine());
+bool v = true;
 
-bool result = true;
-
-if((n+n2) == 30)
+if (n <= 100 && n % 10 == 0)
 {
-    Console.WriteLine(result);
+    Console.WriteLine(v);
+}
+else if (n > 100 && n <= 200)
+{
+    Console.WriteLine(v);
 }
 else
 {
-    result = false;
-    Console.WriteLine(result);
+    v = false;
+    Console.WriteLine(v);
 }
