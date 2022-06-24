@@ -1,15 +1,15 @@
-﻿Console.Write("Input: ");
+﻿Console.WriteLine("Input: ");
 int n = int.Parse(Console.ReadLine());
+int n2 = int.Parse(Console.ReadLine());
 
-int result = 0;
+bool result = true;
 
-if (n < 51)
+if((n+n2) == 30)
 {
-    n = 51 - n;
-    Console.WriteLine(n);
+    Console.WriteLine(result);
 }
 else
 {
-    n = 3 * (51 - n);
-    Console.WriteLine(n);
+    result = false;
+    Console.WriteLine(result);
 }
